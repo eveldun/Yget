@@ -1,0 +1,6 @@
+main.py
+setup.py
+yget.egg-info/PKG-INFO
+yget.egg-info/SOURCES.txt
+yget.egg-info/dependency_links.txt
+yget.egg-info/top_level.txt
