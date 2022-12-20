@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ##################################################
 # Yget - Open Source YouTube Video Installer
-# Version: 0.9 - Development Build
+# Version: 0.9.5 - Development Build
 # Credits: Install Location
 # Purpose: Sick of not being able to right-click YouTube videos Download them with Yget
 ##################################################
@@ -44,17 +44,16 @@ def completed(stream, file_path):
 
 def show_progress_bar(stream, chunk, bytes_remaining):
     sys.stdout.flush()
-    print(" ", flush=True)
     Progress = "━━"
     BadSpace = bcolors.OKGREEN + "━━" + bcolors.ENDC
     x = stream.filesize
     BytesDownloaded = x - bytes_remaining
     Percentage = (bytes_remaining / x) * 100
-    TFraction = Percentage / 4
-    Spaces = 25 - TFraction
+    TFraction = (Percentage / 4)
+    Spaces = int(round((25 - TFraction)+0.000000000000000001))
     Spaces = BadSpace * Spaces
-    Pr = TFraction * Progress
-    print("[" + str(Pr) + str(Spaces) + "] " + str(x - bytes_remaining) + "/" + str(x), end="\r")
+    Pr = round(TFraction+0.0000000000000000001) * Progress
+    print("[" + str(Spaces) + str(Pr) + "] " + str(x - bytes_remaining) + "/" + str(x) +"                              ", end="\r")
 
 
 def YtConvert(VideoURL, FileFormat2):
@@ -71,7 +70,7 @@ def YtConvert(VideoURL, FileFormat2):
     except Exception as UwU:
         if random.randint(1, 100) != 100:
             print(bcolors.FAIL + "ERROR: Download failed" + bcolors.ENDC)
-            print(bcolors.FAIL + UwU + bcolors.ENDC)
+            print(bcolors.FAIL + str(UwU) + bcolors.ENDC)
             return 1
         else:
             print(
