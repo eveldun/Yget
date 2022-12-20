@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 ##################################################
 # Yget - Open Source YouTube Video Installer
-# Version: 0.9.5 - Development Build
+# Version: 1.0 - Development Build
 # Credits: Install Location
 # Purpose: Sick of not being able to right-click YouTube videos Download them with Yget
 ##################################################
 import argparse
 import random
 import sys
-
 import pytube
 
 Varg = 1
@@ -18,7 +17,6 @@ arguments.add_argument("-f", "--File-format", action="store_const", const=Varg, 
                        help="Video File Format: Mp3,Mp4 Default:Mp4")
 
 
-# Im So stupid i dont program for 1 week and i have already gone to stack overflow 100000000 times
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -89,7 +87,15 @@ def YtConvert(VideoURL, FileFormat2):
                 print("Error")
             print("Critical Error Happened a second time killing program!")
             quit()
+def Process(VideoUrl,Format):
+    #This Function Checks if you are a playlist
+    if "playlist" in VideoUrl:
+        print("Downloading Through playlist mode")
+        for Vid in pytube.Playlist(VideoUrl).video_urls:
+            YtConvert(Vid,Format)
+    else:
+        YtConvert(VideoUrl,Format)
 
 
 ###Main Program Starts###
-YtConvert(Argx.VideoUrl, Argx.Data)
+Process(Argx.VideoUrl, Argx.Data)
