@@ -13,8 +13,7 @@ import pytube
 Varg = 1
 arguments = argparse.ArgumentParser(prog="yget", description="Converts Your Favorite Songs To Downloaded Format")
 arguments.add_argument("VideoUrl", type=str, help="The Video Url")
-arguments.add_argument("-f", "--File-format", action="store_const", const=Varg, dest="Data", default="mp4",
-                       help="Video File Format: Mp3,Mp4 Default:Mp4")
+arguments.add_argument("-f", "--File-format",dest="Data", default="mp4", help="Video File Format: Mp3,Mp4 Default:Mp4")
 
 
 class bcolors:
