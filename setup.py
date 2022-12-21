@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='yget',
+    name='yget.py',
     version='0.9',
     packages=[''],
     url='https://github.com/eveldun/Yget',

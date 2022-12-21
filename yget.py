@@ -9,6 +9,8 @@ import argparse
 import random
 import sys
 import pytube
+import tkinter
+
 
 Varg = 1
 arguments = argparse.ArgumentParser(prog="yget", description="Converts Your Favorite Songs To Downloaded Format")
