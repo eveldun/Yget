@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/eveldun/yget">
-    <img src="https://github.com/eveldun/Universal-Assets/raw/main/YgetLogo.png" alt="Yget" width="700" height="200">
+    <img src="https://github.com/eveldun/Universal-Assets/raw/main/YgetLogo.png" alt="Yget" width="700" height="300">
   </a>
 
 <h3 align="center">Yget</h3>
