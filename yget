@@ -56,7 +56,6 @@ def show_progress_bar(stream, chunk, bytes_remaining):
 
 def YtConvert(VideoURL, FileFormat2):
     try:
-        FileFormat2 = FileFormat2.lower()
         video = pytube.YouTube(VideoURL,
                                on_progress_callback=show_progress_bar,
                                on_complete_callback=completed
