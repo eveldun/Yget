@@ -51,7 +51,7 @@ def show_progress_bar(stream, chunk, bytes_remaining):
     Spaces = int(round((25 - TFraction)+0.000000000000000001))
     Spaces = BadSpace * Spaces
     Pr = round(TFraction+0.0000000000000000001) * Progress
-    print("[" + str(Spaces) + str(Pr) + "] " + str(x - bytes_remaining) + "/" + str(x) +"                              ", end="\r")
+    print("[" + str(Spaces) + str(Pr) + "] " + str(x - bytes_remaining) + "/" + str(x) +"                              ", end="\r",flush=True)
 
 
 def YtConvert(VideoURL, FileFormat2):
@@ -90,9 +90,9 @@ def YtConvert(VideoURL, FileFormat2):
 def Process(VideoUrl,Format):
     #This Function Checks if you are a playlist
     if "playlist" in VideoUrl:
-        print("Downloading Through playlist mode")
-        for Vid in pytube.Playlist(VideoUrl).video_urls:
-            YtConvert(Vid,Format)
+        play_list = pytube.Playlist(VideoUrl)
+        for video in play_list.video_urls:
+            YtConvert(video,Format)
     else:
         YtConvert(VideoUrl,Format)
 
