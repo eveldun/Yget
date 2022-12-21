@@ -30,11 +30,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/eveldun/Universal-Assets/raw/main/YgetLogo.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/eveldun/yget">
+    <img src="https://github.com/eveldun/Universal-Assets/raw/main/YgetLogo.png" alt="Yget" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Yget</h3>
 
   <p align="center">
     project_description
