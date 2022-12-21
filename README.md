@@ -32,7 +32,7 @@ This is open source and under a M.I.T license
 
 
 ## Yget - Open Source Youtube Video Downloader
-![Yget Downloading a Youtube Playlist]("https://raw.githubusercontent.com/eveldun/Universal-Assets/main/Screenshot%20from%202022-12-20%2020-22-01.png")
+![Yget Downloading a Youtube Playlist](https://raw.githubusercontent.com/eveldun/Universal-Assets/main/Screenshot%20from%202022-12-20%2020-22-01.png)
 
 ## FAQ
 
