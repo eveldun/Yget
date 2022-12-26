@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ##################################################
 # Yget - Open Source YouTube Video Installer
-# Version: 1.0 - Development Build
+# Version: 1.0.1 - Development Build (Code Name StarBorn)
 # Credits: Install Location
 # Purpose: Sick of not being able to right-click YouTube videos Download them with Yget
 ##################################################
