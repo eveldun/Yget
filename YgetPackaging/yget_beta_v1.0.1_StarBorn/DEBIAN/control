@@ -1,0 +1,7 @@
+Package: yget
+Version: 1.0.1
+Architecture: all
+Maintainer: eveldun123@gmail.com
+Depends: python3
+Homepage: https://github.com/eveldun/Yget
+Description: yget open source youtube downloader
