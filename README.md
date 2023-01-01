@@ -54,5 +54,5 @@ and will fix the bug.
 
 ## Support
 
-For support, email eveldun785@gmail.com.
+For support, email eveldun123@gmail.com.
 
