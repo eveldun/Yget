@@ -49,6 +49,8 @@ Unfortanetly currently there is a bug with the loading system
 it loads but the progress updates slowly. I have found the root cause
 and will fix the bug.
 
+#### Looking for gui version?
+The gui version can be found right [here](https://github.com/eveldun/Yget-gui-Project)
 
 
 
