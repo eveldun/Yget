@@ -49,7 +49,19 @@ Unfortanetly currently there is a bug with the loading system
 it loads but the progress updates slowly. I have found the root cause
 and will fix the bug.
 
+#### Where can i find the Gui / Ui source code?
+The gui version can be found right [here](https://github.com/eveldun/Yget-gui-Project)
 
+
+# Donate
+
+Feel Free to donate if you wish :)
+
+Monero:   
+85APz9Eb9C95X1k8sdRKJ882WqojhQv4nZnKrqcPgxzE5kQAwPe9X2HBg51vqrfiGxVx9UpG5hG1KCZSjX6Zzg4zEkmsVqq
+
+Bitcoin:  
+15CxDsBUdxpsTyQYpqaD3uiJWKfxWDoA13
 
 
 ## Support
